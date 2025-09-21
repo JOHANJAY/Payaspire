@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* For IE and Edge */
+    scrollbar-width: none; /* For Firefox */
+  }
+}
+
+@font-face {
+  font-family: Exo;
+  src: url("./assets/fonts/Exo-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  font-family: Exo, sans-serif;
+}
+
+@theme inline {
+  --color-base-blue: #000073;
+}
